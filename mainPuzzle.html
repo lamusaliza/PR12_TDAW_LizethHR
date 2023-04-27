@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <script src="script.js" defer></script>
+  <title>Puzzle deslizable</title>
+  <style>
+    .puzzle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.puzzle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+   
+
+    .tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #ffb6c1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+    .tile:hover {
+  transform: scale(1.1);
+}
+
+    .empty {
+  background-color: #f8b6c1;
+  border: none;
+  box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="puzzle-container">
+    <div class="puzzle">
+      <div class="tile">1</div>
+      <div class="tile">2</div>
+      <div class="tile">3</div>
+      <div class="tile">4</div>
+      <div class="tile">5</div>
+      <div class="tile">6</div>
+      <div class="tile">7</div>
+      <div class="tile">8</div>
+      <div class="tile empty"></div>
+    </div>
+  </div>
+  
+</body>
+</html>
